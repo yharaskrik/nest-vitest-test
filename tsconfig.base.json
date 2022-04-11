@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nest-vitest-test/id": ["libs/id/src/index.ts"],
+      "@nest-vitest-test/notid": ["libs/notid/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

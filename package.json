@@ -5,16 +5,18 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "vitest --config libs/notid/vitest.config.ts"
   },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "@nxext/vitest": "^13.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "vitest": "^0.9.3"
   },
   "devDependencies": {
     "@nestjs/schematics": "^8.0.0",

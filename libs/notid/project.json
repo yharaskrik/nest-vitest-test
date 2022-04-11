@@ -1,0 +1,49 @@
+{
+  "root": "libs/notid",
+  "sourceRoot": "libs/notid/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/notid",
+        "tsConfig": "libs/notid/tsconfig.lib.json",
+        "packageJson": "libs/notid/package.json",
+        "main": "libs/notid/src/index.ts",
+        "assets": [
+          "libs/notid/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/notid/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/notid"
+      ],
+      "options": {
+        "jestConfig": "libs/notid/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "vitest": {
+      "executor": "@nxext/vitest:vitest",
+      "options": {
+        "command": "run"
+      }
+    }
+  },
+  "tags": []
+}
