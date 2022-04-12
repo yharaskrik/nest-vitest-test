@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@prisma/core": ["prisma/generated"],
       "@nest-vitest-test/id": ["libs/id/src/index.ts"],
       "@nest-vitest-test/notid": ["libs/notid/src/index.ts"]
     }

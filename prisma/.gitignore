@@ -1,0 +1,11 @@
+# Ignore all files
+/*
+tmp/
+# Except the schema, certs and migrations
+!schema.prisma
+!README.md
+!.gitignore
+!*.pem
+!migrations
+!seed.ts
+!seed

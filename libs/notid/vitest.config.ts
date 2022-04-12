@@ -1,9 +1,9 @@
-import {defineConfig} from 'vitest/config';
+import { mergeConfig } from 'vite';
+import baseConfig from '../../vitest.config';
 
-export default defineConfig({
+export default mergeConfig(baseConfig, {
   test: {
-    dir: __dirname,
-    globals: true,
-    watch: false
+    dir: __dirname
   },
+  plugins: [],
 });
